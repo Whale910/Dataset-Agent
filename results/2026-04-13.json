@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Generative Simulation for Policy Learning in Physical Human-Robot Interaction",
+        "is_open_source": "/",
+        "human_motion_count": "/",
+        "humanoid_motion_count": "/",
+        "video_duration": "/",
+        "data_origin": "/",
+        "link": "https://rchi-lab.github.io/gen_phri/",
+        "is_locomotion": false,
+        "reason": "拒绝原因：内容涉及物理人机交互（pHRI），专注于抓取、手部动作和物体交互等操作任务（如抓挠和洗澡），不符合全身运动（如走、跑、跳、平衡）的定义。根据排除项规则，is_locomotion 必须为 false。",
+        "tags": []
+    },
+    {
+        "name": "RoSHI",
+        "is_open_source": "根据协议而定",
+        "human_motion_count": "/",
+        "humanoid_motion_count": "/",
+        "video_duration": "/",
+        "data_origin": "动捕(MoCap)",
+        "link": "https://roshi-mocap.github.io/",
+        "is_locomotion": false,
+        "reason": "拒绝原因：摘要中提到系统记录运动数据用于人形机器人策略学习，但未明确指定这些数据仅限于全身运动如走、跑、跳、平衡。同时，系统融合IMU和SLAM技术，可能涉及手部动作或物体交互，根据排除项（Manipulation），如果涉及抓取、手部动作、物体交互，is_locomotion必须为false。因此，判定不属于Locomotion。",
+        "tags": []
+    },
+    {
+        "name": "DynaVid",
+        "is_open_source": "/",
+        "human_motion_count": "/",
+        "humanoid_motion_count": "/",
+        "video_duration": "/",
+        "data_origin": "合成运动数据（光流渲染）",
+        "link": "/",
+        "is_locomotion": false,
+        "reason": "拒绝原因：该内容主要涉及视频合成框架，使用合成运动数据生成视频，包括剧烈的人类动作生成和相机运动控制。虽然提到了“vigorous human motion generation”，但整体焦点是视频生成和运动控制，而非全身运动如走、跑、跳、平衡。根据排除项规则，这涉及物体交互（视频生成）和手部动作（未明确但属于视频内容），因此不属于Locomotion。",
+        "tags": []
+    },
+    {
+        "name": "PrivHAR-Bench",
+        "is_open_source": "开源",
+        "human_motion_count": "1932",
+        "humanoid_motion_count": "/",
+        "video_duration": "/",
+        "data_origin": "视频抽取",
+        "link": "/",
+        "is_locomotion": false,
+        "reason": "拒绝原因：该数据集专注于视频动作识别，涉及人类活动识别（HAR），包括15个活动类别，强调隐私保护与识别效用的权衡。虽然包含人类运动特征，但未明确限定于全身运动（如走、跑、跳、平衡），且摘要中未排除手部动作或物体交互。根据判定规则，如果涉及抓取、手部动作或物体交互，is_locomotion必须为false。由于摘要未明确说明排除这些元素，且内容偏向广义动作识别，因此判定为不属于Locomotion。",
+        "tags": []
+    },
+    {
+        "name": "EgoNav",
+        "is_open_source": "根据协议而定",
+        "human_motion_count": "/",
+        "humanoid_motion_count": "/",
+        "video_duration": "5h",
+        "data_origin": "动捕(MoCap)",
+        "link": "https://egonav.weizhuowang.com",
+        "is_locomotion": true,
+        "reason": "接受依据：论文摘要明确提到系统使用5小时的人类行走数据，使类人机器人能够在多样环境中导航，包括行走、等待、绕行等全身运动，不涉及抓取或手部操作等操纵行为。",
+        "tags": []
+    },
+    {
+        "name": "DreamControl-v2",
+        "is_open_source": "/",
+        "human_motion_count": "/",
+        "humanoid_motion_count": "/",
+        "video_duration": "/",
+        "data_origin": "动捕(MoCap)、数据整合",
+        "link": "/",
+        "is_locomotion": false,
+        "reason": "摘要中明确提到“loco-manipulation skills”和“manipulation tasks”，涉及手部动作和物体交互，根据排除项规则，is_locomotion必须为false。",
+        "tags": []
+    },
+    {
+        "name": "HandX",
+        "is_open_source": "根据协议而定",
+        "human_motion_count": "/",
+        "humanoid_motion_count": "/",
+        "video_duration": "/",
+        "data_origin": "动捕(MoCap)",
+        "link": "https://handx-project.github.io",
+        "is_locomotion": false,
+        "reason": "拒绝原因：内容涉及手部动作和双手交互，如摘要中提到'hand motion and bimanual interaction'、'finger articulation'、'inter-hand coordination'，这属于Manipulation（抓取、手部动作、物体交互），根据判定规则2，应排除Locomotion。",
+        "tags": []
+    },
+    {
+        "name": "Active Stereo-Camera Outperforms Multi-Sensor Setup in ACT Imitation Learning for Humanoid Manipulation",
+        "is_open_source": "开源",
+        "human_motion_count": "/",
+        "humanoid_motion_count": "/",
+        "video_duration": "/",
+        "data_origin": "/",
+        "link": "/",
+        "is_locomotion": false,
+        "reason": "拒绝原因：该论文摘要明确涉及抓取和手部动作（如'three-finger hands for two manipulation tasks'、'manipulation tasks'、'structured manipulation task'），属于物体交互范畴。根据判定规则第2条，涉及抓取、手部动作、物体交互时，is_locomotion必须为false。",
+        "tags": []
+    },
+    {
+        "name": "SoftMimicGen",
+        "is_open_source": "根据协议而定",
+        "human_motion_count": "/",
+        "humanoid_motion_count": "/",
+        "video_duration": "/",
+        "data_origin": "模拟生成",
+        "link": "https://softmimicgen.github.io",
+        "is_locomotion": false,
+        "reason": "拒绝原因：内容明确涉及物体交互（如抓取、折叠、拾取放置等），属于操作（Manipulation）范畴，不符合全身运动（Locomotion）的定义。",
+        "tags": []
+    },
+    {
+        "name": "MuscleMimic",
+        "is_open_source": "开源",
+        "human_motion_count": "/",
+        "humanoid_motion_count": "/",
+        "video_duration": "/",
+        "data_origin": "动捕(MoCap)",
+        "link": "https://github.com/amathislab/musclemimic",
+        "is_locomotion": true,
+        "reason": "接受依据：摘要中明确提到该框架包含一个用于全身运动的完整身体模型（416块肌肉），专门用于运动（locomotion），如行走和跑步，且未涉及抓取或手部动作等操作任务。",
+        "tags": []
+    }
+]
