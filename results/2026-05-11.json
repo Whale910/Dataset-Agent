@@ -1,0 +1,110 @@
+[
+    {
+        "name": "Towards Highly-Constrained Human Motion Generation with Retrieval-Guided Diffusion Noise Optimization",
+        "is_open_source": "/",
+        "human_motion_count": "/",
+        "humanoid_motion_count": "/",
+        "video_duration": "/",
+        "data_origin": "/",
+        "link": "/",
+        "is_locomotion": false,
+        "reason": "该论文主要关注人体运动生成，涉及行走步数等约束，但并未明确提及数据集及其属性，且未涉及抓取等排除项，但根据规则，题目要求生成人体运动，但未明确数据信息，因此无法判定为专属于Locomotion的数据集，且摘要未提供具体数据集信息，故拒绝。",
+        "tags": []
+    },
+    {
+        "name": "Bi3",
+        "is_open_source": "根据推断，可能开源，但摘要中未明确说明",
+        "human_motion_count": "/",
+        "humanoid_motion_count": "/",
+        "video_duration": "10.5 hours",
+        "data_origin": "MoCap?（摘要中提到ground-truth motion tracks，可能基于动捕）",
+        "link": "/",
+        "is_locomotion": false,
+        "reason": "该数据集聚焦于社交机器人导航，涉及机器人与人群的交互，属于导航任务，而非全身运动（走、跑、跳、平衡）的数据集。",
+        "tags": []
+    },
+    {
+        "name": "TDSC (Temporal Deep Self-expressive subspace Clustering)",
+        "is_open_source": "/",
+        "human_motion_count": "/",
+        "humanoid_motion_count": "/",
+        "video_duration": "/",
+        "data_origin": "/",
+        "link": "/",
+        "is_locomotion": false,
+        "reason": "该论文研究的是人体运动分割（HMS），旨在将视频分割成不同运动段，属于动作识别/分割范畴，而非生成或分析 locomotion 数据。摘要中未提及 locomotion 相关任务（如行走、跑步等），也未涉及人形机器人运动。",
+        "tags": []
+    },
+    {
+        "name": "Uni-HOI",
+        "is_open_source": "/",
+        "human_motion_count": "/",
+        "humanoid_motion_count": "/",
+        "video_duration": "/",
+        "data_origin": "/",
+        "link": "/",
+        "is_locomotion": false,
+        "reason": "内容涉及人-物交互（HOI）生成，包括手部与物体交互，属于Manipulation范畴，而非全身运动（Locomotion）。",
+        "tags": []
+    },
+    {
+        "name": "IAM",
+        "is_open_source": "待确认",
+        "human_motion_count": "/",
+        "humanoid_motion_count": "/",
+        "video_duration": "/",
+        "data_origin": "动捕",
+        "link": "https://vjwq.github.io/IAM",
+        "is_locomotion": false,
+        "reason": "该工作主要关注人体运动生成，涉及抓取、物体交互等操作类动作，属于Manipulation范畴，并非全身运动（Locomotion）。",
+        "tags": []
+    },
+    {
+        "name": "MotionBricks",
+        "is_open_source": "未知",
+        "human_motion_count": "350000+",
+        "humanoid_motion_count": "/",
+        "video_duration": "/",
+        "data_origin": "未明确说明（推断为动捕或生成）",
+        "link": "未知",
+        "is_locomotion": false,
+        "reason": "摘要明确提到涉及object interaction（物体交互）以及navigation and object-scene interaction，属于抓取、手部动作、物体交互的Manipulation范畴，因此不符合Locomotion定义。",
+        "tags": []
+    },
+    {
+        "name": "HA-2.2M",
+        "is_open_source": "/",
+        "human_motion_count": "2.2M episodes",
+        "humanoid_motion_count": "/",
+        "video_duration": "/",
+        "data_origin": "视频抽取（human videos）",
+        "link": "/",
+        "is_locomotion": false,
+        "reason": "该数据集及论文聚焦于机器人操作（Manipulation），涉及抓取、手部动作（MANO-style hand motion）和物体交互，属于操作领域，而非全身运动（Locomotion）。",
+        "tags": []
+    },
+    {
+        "name": "QuietWalk",
+        "is_open_source": "闭源",
+        "human_motion_count": "/",
+        "humanoid_motion_count": "/",
+        "video_duration": "/",
+        "data_origin": "动捕(MoCap)",
+        "link": "未提供链接",
+        "is_locomotion": true,
+        "reason": "论文标题和摘要明确涉及人形机器人行走（locomotion），使用强化学习训练低噪声行走策略，未提及抓取或手部操作，故接受。",
+        "tags": []
+    },
+    {
+        "name": "HORA-DB/Human_motion",
+        "is_open_source": "是",
+        "human_motion_count": "/",
+        "humanoid_motion_count": "/",
+        "video_duration": "/",
+        "data_origin": "视频抽取（from third-person videos and ego-centric videos）",
+        "link": "https://github.com/HORA-DB/Human_motion",
+        "is_locomotion": false,
+        "reason": "数据集包含全身运动和手部运动，但明确涉及手部动作和物体交互（MANO手部运动序列），属于Manipulation范畴，因此排除。",
+        "tags": []
+    }
+]
